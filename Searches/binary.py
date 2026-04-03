@@ -1,4 +1,11 @@
 #Note: code is overly commented for the sake of learning
+#Assumptions: integer data, no duplicates, sorted in ascending order, amount of data determined in main
+#Logarithmic time algorithm - O(lg n), thanks to Interval Halving at each iteration 
+#Throwing out half the data each iteration means we iterate through the loop lg n time in the worst case
+#Worst case: target is not in the data, O(lg n)
+#Best case: target is found in the data at the first value mid points to, Big Omega(1) - constant time
+
+
 
 #Iterative Binary Search - to be used on sorted data
 def binary_search(data, n, target):
